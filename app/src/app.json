@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "sidApp",
+    "slug": "sidApp",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logos/logo_colored_contour_resized.png",
+    "splash": {
+      "image": "./assets/logos/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#c7d3f0",
+      "flex": 1
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+     "android": {
+      "package": "com.NoobEnterprise.sidApp",
+      "versionCode": 1
+    }
+  }
+}

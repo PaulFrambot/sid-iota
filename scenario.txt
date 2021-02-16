@@ -1,0 +1,56 @@
+
+Scénario:
+
+En italique, le backend 
+
+0- L’utilisateur ouvre l’application
+
+1-Première fois: message explicatif qui pop (modal en react native) avec une croix pour la fermer ou un OK
+
+2- Page choix du compte
+On voit les comptes existant on clique pour se log (Mise à jour de l’objet AppState). Si besoin on demande l’auth.
+On peut aussi cliquer sur ajouter un compte on a alors modal qui pop avec un formularie pour s’inscrire ( + ajouter un compte existant en grisé car pas fonctionnel encore)
+Nom de compte, mot de passe haché salé:
+Génération d’une seed aléatoire stockée et sécurisée sur le téléphone
+Génération de l’adresse 0
+Création d’une entrée account(id, Username, Password_Hash, seed, Adress0)
+
+2b- Connexion on se log
+
+
+
+3- On arrive sur le drawer qui a 3 onglets (Conversations (par défaut), Contacts, Mon Compte)
+
+Conversations: Un bouton pour démarrer une new conversation et la  liste de des n conversations: quand on clique sur une on rentre dans la conversation (stack)
+
+Nouvelle conversation:
+Si pas contact: créer contact
+Si contact: choisir parmi liste de contact
+
+Envoi d’un message:
+Récupération du texte du message, écriture dans la tangle
+
+
+Contacts: Un bouton pour créer un nouveau contact et la liste des contacts: quand on clique sur un contact on a le détail (stack)
+
+Envoyer mon contacct:
+copy paste un lien (qui redirige vers l’application) vers l’appli avec l’adresse0 ou qrcode
+
+Créer un contact:
+Entrer l’adresse 0 ou scanner QRcode
+
+
+Mon Compte: QRCode de l’adress0, enable/disable le auth_required pour ce compte, Déconnexion
+
+
+A TOUT INSTANT:
+
+Si connecté:
+Un socket demande s’il y a des messages avec l’adresse0 du compte avec lequel on est connecté on envoie notif
+
+Sinon:
+Lors de la prochaine connexion: on fait une maj à partir du dernier timestamp
+
+PLUS:
+Si on clique sur un lien d’invitation/qr code ⇒ voulez vous ajouter ce contact?
+

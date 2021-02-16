@@ -1,0 +1,44 @@
+On trouve dans dans ce document toutes les options supplémentaires et une idée de l'implémentation qu'on pourra rajouter à la PoC:
+
+- Transfert de compte: au moment où on clique sur ajouter un compte on peut choisir de transférer un compte: ca génère un flash code (une seed et une adresse0 
+temporaire est générée pour transférer la seed d'un compte vers le nouvel apareil)
+
+- Option de transfert d'IOTA: proposer si on veut rajouter des iotas au message
+
+- S'occuper des différents warnings iota
+
+- Notif reception de messages?
+
+-log in from anywhere? See iota+ de Marlon morales
+
+- Améliorer l'interne :
+
+1- Avoir un lister/interval par compte
+
+2- implémenter un socket jusqu'à un node
+
+3- socket si pas connecté
+
+- Empecher l'ajout de 2 fois le meme contact
+
+- onglet politique de confidentialité dans laquelle on met l'article d'alexandre
+
+- clavier azerty
+
+- option auth required
+
+- partager image
+
+- Liste temporaires de demandes d'amis:
+
+Photos:
+1- Mettre juste une lettre avec couleur random
+
+2- Photo en local: pour différencier les comptes
+
+3- Une seule photo de profil transférée par un bundle 
+
+Petites fonctionnalités:
+- Auth non required
+- Comptes pas par défaut
+

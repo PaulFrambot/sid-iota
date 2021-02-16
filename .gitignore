@@ -1,0 +1,5 @@
+exApp/node_modules
+exApp/.expo
+app/node_modules
+app/.expo
+app/yarn.lock
